@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity" />
-        <activity android:name=".RelativeLayoutActivity"></activity>
+        <activity android:name=".RelativeLayoutActivity" />
+        <activity android:name=".PercentageLayoutActivity"></activity>
     </application>
 
 </manifest>
