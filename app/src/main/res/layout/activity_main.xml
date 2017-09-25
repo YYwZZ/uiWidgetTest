@@ -13,10 +13,27 @@
         android:textColor="#00ff00"
         android:gravity="center"/>
 
+
     <Button
         android:id="@+id/button"
+        android:onClick="btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button"
         android:textAllCaps="false"/>
+
+    <EditText
+        android:id="@+id/Edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type something here"
+        android:maxLines="2"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1"/>
+
+
 </LinearLayout>
