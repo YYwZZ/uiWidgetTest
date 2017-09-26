@@ -2,6 +2,7 @@ package app.wyyzzz.uiwidgettest;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,14 +24,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar !=null){
+            actionBar.hide();
+        }
+
     }
 
-    public void btn1(View v){
+    /*public void btn1(View v){
 
         Intent intent = new Intent(MainActivity.this,SecondActivity.class);
         startActivity(intent);
 
-        /*//EditText test
+        //EditText test
         editText = (EditText)findViewById(R.id.Edit_text);
         String InputText = editText.getText().toString();
         Toast.makeText(MainActivity.this,InputText,Toast.LENGTH_SHORT).show();
@@ -61,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog,int which){}
         });
-        dialog.show();*/
+        dialog.show();
 
-    }
+    }*/
 
 }
